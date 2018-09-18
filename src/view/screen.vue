@@ -22,7 +22,7 @@
             </Row>
           </div>
           <div class="choose-radio t-left m-t20">
-            <RadioGroup type="button" value="1">
+            <RadioGroup type="button" value="1" size="small">
               <Radio label="1">直播平台</Radio>
               <Radio label="2">主流媒体</Radio>
               <Radio label="3">百团大战</Radio>
@@ -43,11 +43,11 @@
                      <div class="fbox fz20 c p-20">
                        <div class="flex">
                            <div class="fz32">1,000</div>
-                           <div>今日浏览量(万)</div>
+                           <div class="td-render">今日浏览量(万)</div>
                        </div>
                        <div class="flex">
                          <div class="fz32">11,010</div>
-                         <div>实际浏览总量(万)</div>
+                         <div class="td-render">实际浏览总量(万)</div>
                        </div>
                      </div>
                    </i-border>
@@ -100,7 +100,7 @@
                  </div>
                  <div class="choose-radio">
                    <!--<RadioGroup @on-change="orderStatusChange" v-model="timePickerTwo.day" type="button">-->
-                   <RadioGroup type="button" value="12H">
+                   <RadioGroup type="button" value="12H" size="small" class="m-t10">
                      <Radio label="12H">最近12小时</Radio>
                      <Radio label="7D">最近7天</Radio>
                    </RadioGroup>
@@ -140,14 +140,14 @@
             </Row>
           </div>
           <div class="choose-radio t-left m-t20 m-l25 ">
-            <RadioGroup type="button" value="1">
+            <RadioGroup type="button" value="1" size="small">
               <Radio label="1">企业</Radio>
             </RadioGroup>
           </div>
           <div class="m-t20 m-l25 m-r5">
             <div class="bg-tip side-item-title c t-left">企业传播量</div>
             <div class="top-chart top-chart-right t-left c">
-              <Carousel autoplay :autoplay-speed="10000" v-model="value2" loop radius-dot arrow="never" dots="outside">
+              <Carousel autoplay :autoplay-speed="10000" v-model="value2" radius-dot arrow="never" dots="outside">
                 <CarouselItem>
                     <graph-percent v-for="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]" :row="rows[i%2]" :key="i" class="m-b10"></graph-percent>
                 </CarouselItem>
@@ -164,9 +164,9 @@
 </template>
 
 <script>
-  import vHeader from '../components/header.vue';
-  import iBorder from '../components/border';
-  import graphPercent from '../components/graph-percent';
+  import vHeader from 'components/header';
+  import iBorder from 'components/border';
+  import graphPercent from 'components/graph-percent';
 
   export default {
     name: "screen",
@@ -704,4 +704,6 @@
 
   .top-chart-left {padding: 30px 0 10px;}
   .top-chart-right{padding: 23px 0;}
+  .top-chart-right .ivu-carousel-dots li button{background:#fff;}
+  .top-chart-right .ivu-carousel-dots li button{background:#fff;}
 </style>

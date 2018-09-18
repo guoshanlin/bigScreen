@@ -6,7 +6,7 @@
           <Row type="flex">
             <i-col>
               <div class="login-img">
-                <img src="../assets/u23.png"/>
+                <img src="../../assets/u23.png"/>
               </div>
             </i-col>
             <i-col>
@@ -30,7 +30,7 @@
 
 <script>
   export default {
-    name: "header",
+    name: "index",
     props: {
       title: ''
     },
