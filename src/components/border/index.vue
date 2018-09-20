@@ -2,7 +2,7 @@
     <div class="border-box">
       <div class="border-top-right"></div>
       <div class="border-bottom-right"></div>
-      <div>
+      <div class="hf">
         <slot></slot>
       </div>
     </div>

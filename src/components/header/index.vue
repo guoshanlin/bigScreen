@@ -40,11 +40,11 @@
 
 <style scoped>
   .header {
-    height: 100px;
+    height: 80px;
   }
 
   .header-item {
-    height: 100px;
+    height: 80px;
   }
 
   .login-img {
@@ -54,7 +54,7 @@
 
   .login-name {
     margin-left: 5px;
-    height: 100px;
+    height: 80px;
     font-weight: bold;
     padding: 15px 0px;
     line-height: 25px;
@@ -67,12 +67,12 @@
   }
 
   .theme-name {
-    line-height: 50px;
+    line-height: 40px;
     font-size: 32px;
   }
 
   .theme-plan {
-    line-height: 50px;
+    line-height: 40px;
   }
 
   .theme-plan span {
